@@ -2,10 +2,6 @@
 
 > ⚡️ Generate smart Git commit messages from your staged code changes — powered by **Gemini AI** or offline **rule-based logic**.
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Kushalp2004/git-commit-genie?style=flat-square)
-![GitHub repo stars](https://img.shields.io/github/stars/Kushalp2004/git-commit-genie?style=flat-square)
-![License](https://img.shields.io/github/license/Kushalp2004/git-commit-genie?style=flat-square)
-
 ---
 
 ## ✨ Features
@@ -27,3 +23,44 @@
 2. Open VS Code, press `Ctrl+Shift+P`
 3. Run one of the following commands:
 
+📏 Generate Rule-Based Commit Message
+🔮 Generate AI Commit Message
+
+
+4. Choose:
+- 💬 Use → inserts the message into the Git commit box
+- 📋 Copy → copies message to your clipboard
+
+---
+
+## 🧪 Example Outputs
+
+### Rule-based:
+feat: Update HTML (index.html), Update logic (script.js) – 10 lines added, 2 removed
+
+### AI (Gemini):
+refactor: improve score reset logic and add match end condition
+
+
+---
+
+## 🔧 Configuration
+
+1. **Install dependencies**:
+```bash
+npm install
+
+Set your API key in a .env file:
+
+ini
+Copy
+Edit
+GEMINI_API_KEY=your-secret-key-here
+Get your key from: https://makersuite.google.com/app/apikey
+
+Compile the project:
+
+bash
+Copy
+Edit
+npm run compile
