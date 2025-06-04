@@ -1,78 +1,72 @@
 # 🧙‍♂️ Git Commit Genie
 
-**Auto-generate clear, smart Git commit messages directly from your staged changes — no thinking required.**
+> ⚡️ Generate smart Git commit messages from your staged code changes — powered by **Gemini AI** or offline **rule-based logic**.
 
 ---
 
 ## ✨ Features
 
 - 🔍 Reads your `git diff --cached` (staged changes)
-- 📝 Suggests a commit message based on file types and changes
-- 📋 One-click options:
+- 🧠 **AI mode** – Uses Gemini 2.5 to generate natural-language commit messages
+- 📏 **Rule-based mode** – Infers messages based on file types, keywords, and diff size
+- 💬 VS Code integration:
   - Copy to clipboard
-  - Insert into Git commit message input
-- 🚀 Works with VS Code's Source Control panel
-- 🌱 Lightweight, privacy-respecting (no AI used — yet 😉)
+  - Auto-insert into Source Control commit box
+- 🌐 Dual mode: choose AI or offline anytime
+- 🔐 Privacy: only sends data to Gemini if you choose AI mode
 
 ---
 
-## 🛠️ How to Use
+## 🚀 How to Use
 
-1. Make code changes in your Git repo
-2. Stage the files using VS Code Source Control or `git add`
-3. Press `Ctrl+Shift+P` and run:  
-   > Generate Git Commit Message
+1. Make and **stage** code changes (`git add .`)
+2. Open VS Code, press `Ctrl+Shift+P`
+3. Run one of the following commands:
+
+📏 Generate Rule-Based Commit Message
+🔮 Generate AI Commit Message
+
+
 4. Choose:
-- 📝 Use: Auto-inserts into Git commit box
-- 📋 Copy: Copies to clipboard
+- 💬 Use → inserts the message into the Git commit box
+- 📋 Copy → copies message to your clipboard
 
 ---
 
-## 💡 Example
+## 🧪 Example Outputs
 
-If you staged changes in `index.html` and `script.js`:
+### Rule-based:
+feat: Update HTML (index.html), Update logic (script.js) – 10 lines added, 2 removed
 
-Update HTML (index.html), Update logic (script.js) – 10 lines added, 2 removed.
+### AI (Gemini):
+refactor: improve score reset logic and add match end condition
 
-
----
-
-## 🧠 Why This Helps
-
-- Saves time writing commit messages
-- Encourages clean Git history
-- Works great for fast commits, student projects, and solo work
 
 ---
 
-## 📦 Coming Soon
+## 🔧 Configuration
 
-- 🧠 GPT/AI-powered commit messages (optional)
-- 🐛 Conventional Commit classification (feat, fix, chore)
-- 💾 Custom templates + commit message history
+1. **Install dependencies**:
+```bash
+npm install
 
----
+Set your API key in a .env file:
 
-## 🤝 Contributing
+ini
+Copy
+Edit
+GEMINI_API_KEY=your-secret-key-here
+Get your key from: https://makersuite.google.com/app/apikey
 
-Ideas, bugs, and pull requests welcome!  
-Open an issue or fork the repo on [GitHub](https://github.com/your-username/git-commit-genie)
+Compile the project:
 
----
-
-## 🔐 Privacy
-
-Your code never leaves your machine. This extension uses local Git and VS Code APIs only.
-
----
-
-## 💬 Contact
-
-Made with 💻 by [Kushal P Hiremath]  
-LinkedIn → _[https://www.linkedin.com/in/kushalhiremath/]_
-
----
-
+<<<<<<< HEAD
 =======
 # git-commit-genie
 A VS Code extension that generates smart Git commit messages using Gemini AI or offline rules
+=======
+bash
+Copy
+Edit
+npm run compile
+>>>>>>> be49e9fdc9a0bb29ae56a127588b0a9502a8d9b4
